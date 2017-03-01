@@ -5,10 +5,8 @@ import java.util.Scanner;
  * @creation_date: 22.02.2017.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] s) {
         int n = new Scanner(System.in).nextInt();
-        if (n == 1) System.out.println(0);
-        else if (n % 2 == 0) System.out.println(n / 2);
-        else System.out.println(n);
+        System.out.print(n > 1 ? n % 2 > 0 ? n : n / 2 : 0);
     }
 }
